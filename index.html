@@ -7,65 +7,63 @@
     <title>JOHN CHINECHIEZE ALPHONSUS - PORTFOLIO</title>
     <link rel="stylesheet" href="icofont (9)/icofont/icofont.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+
     <style type="text/css">
-        
-        
-        
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap');
 
         
         * {
             margin: 0;
             padding: 0;
-            box-sizing: 0;
+            box-sizing: border-box;
             font-family: 'Montserrat', sans-serif;
 
         }
 
         .navigation {
             position: fixed;
+            background: #4c0c47;
             width: 100%;
             height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #4c0c47;
         }
 
         .navigation div a {
-            color: #fff;
+            color: #ffffff;
             font-size: 20px;
             text-decoration: none;
         }
 
         .navigation div {
             margin: 0 15px;
-            color: #fff;
+            color: white;
         }
 
-        .header {
+        .hero {
             background: #4c0c5c;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
 
-        .header p {
-            color: #fff;
+        .hero p {
+            color: #ffffff;
             font-size: 20px;
             text-align: center;
         }
 
-        .header img {
+        .hero img {
             border-radius: 50%;
             width: 250px;
             height: 250px;
             margin-bottom: 10px;
         }
 
-        .icons {
+        .social {
             background: #4c0c5c;
             height: 20vh;
             display: flex;
@@ -88,7 +86,7 @@
             margin: 10px 0;
         }
 
-        .skill, .project {
+        .skill {
             width: 200px;
             text-align: center;
             margin: 10px;
@@ -97,15 +95,38 @@
             border-radius: 10px;
         }
 
-        .skill:hover {
-            background: #4c0c5c;
-            color: #f1f1f1;
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
-        .project:hover {
-            background: #4c0c5c;
-            color: #f1f1f1;
+        .project {
+            width: 45%;
+            text-align: center;
+            margin: 15px;
         }
+
+        .skill:hover {
+            background: #4c0c5c;
+            color: #ffffff;
+        }
+
+        .project a:hover {
+            border-bottom: 2.5px #4c0c5c solid;
+            border-bottom-width: thick;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .text {
+            font-size: 18px;
+        }            
 
         .footer {
             width: 100%;
@@ -113,9 +134,9 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            background: #4c0c5c;
             margin-top: 15px 0;
             padding: 15px;
-            background: #4c0c5c;
         }
 
         input[type=text], input[type=email], textarea, button{
@@ -136,8 +157,8 @@
         @media screen and (max-width:600px) {
             .skills {
                 flex-direction: column;
-                height: auto;
-                margin-top: 20px;
+                /*height: auto;
+                margin-top: 20px;*/
             }
         }
 
@@ -149,42 +170,45 @@
             }
         }
 
-        @media screen and (max-width:600px) {
+        /*@media screen and (max-width:600px) {
             .footer {
                 flex-direction: column;
                 height: auto;
                 margin-top: 20px;
             }
+        }*/
+
+
+        .social:hover {
+            background: #4c0c5c;
+            color: #ffffff;
+        }
+
+        .social a {
+            text-decoration: none;
+            background: #4c0c5c;
+            color: #ffffff;   
         }
 
         .icofont-facebook {
+            background: #4c0c5c;
+            border-radius: 10px;
             font-size: 40px;
             margin: 0 10px;
-        }
-
-        .icofont-facebook:hover {
-            background: #4c0c5c;
-            color: #ffffff;
         }
 
         .icofont-instagram {
+            background: #4c0c5c;
+            border-radius: 10px;
             font-size: 40px;
             margin: 0 10px;
         }
 
-        .icofont-instagram:hover {
+        .icofont-twitter {
             background: #4c0c5c;
-            color: #ffffff;
-        }
-
-        .icofont-whatsapp {
+            border-radius: 10px;
             font-size: 40px;
             margin: 0 10px;
-        }
-
-        .icofont-whatsapp:hover {
-            background: #4c0c5c;
-            color: #ffffff;
         }
 
        
@@ -196,39 +220,38 @@
     <nav class="navigation"> 
         <div> <a href="index.html">JOHN</a> </div>
         <div> || </div>
-        <div><a href="#who">WHO</a></div>
+        <div><a href="#WHO">WHO</a></div>
     </nav>
 
-    <div class="header">
+    <div class="hero">
         <img src="Portfolio.jpg" alt="my profile pic" >
         <p>Hello, I`m John. A Frontend Developer</p>
     </div>
 
-    <div class="icons">
-        <i class="icofont-facebook"></i>
-        <div>   </div>
-        <i class="icofont-instagram"></i>
-        <div>   </div>
-        <i class="icofont-whatsapp"></i>  
+    <div class="social">
+        
+        <div><a href="https://facebook.com/johncodes"><i class="icofont-facebook"></i></a></div>
+        <div><a href="https://instagram.com/johnalphonsus3"><i class="icofont-instagram"></i></a></div>
+        <div><a href="https://twitter.com/johnalphonsus9"><i class="icofont-twitter"></i></a></div>  
     </div>
 
     </header>
     
     <main class="main">
         <div class="container">
-            <h2>WHO</h2>
-            <details>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <h1>WHO</h1>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Saepe inventore, assumenda esse distinctio quasi hic facilis dolorum iste aut sint quidem, 
             voluptatum explicabo dolore deserunt doloremque rerum sapiente et voluptate.
-            </details>
+            </p>
         </div>
         <div class="container">
-            <h2>SKILLS</h2>
-            <details>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h1>SKILLS</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ut dolore cumque asperiores qui ipsa mollitia deleniti ipsum. 
             Reiciendis facilis odio, iure praesentium quis dolore atque totam dolor laborum? 
             Eum, praesentium?
-            </details>
+            </p>
             <div class="skills">
                 <div class="skill">HTML</div>
                 <div class="skill">CSS</div>
@@ -236,27 +259,28 @@
             </div>
         </div>
         <main class="container">
-            <h2>PROJECTS</h2>
-            <details>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h1>PROJECTS</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ut dolore cumque asperiores qui ipsa mollitia deleniti ipsum. 
             Reiciendis facilis odio, iure praesentium quis dolore atque totam dolor laborum? 
             Eum, praesentium?
-            </details>
+            </p>
             <div class="projects">
-                <div class="project">Project 1</div>
-                <div class="project">Project 2</div>
-                <div class="project">Project 3</div>
+                <div class="project"><a href="#"> Project 1</a></div>
+                <div class="project"><a href="#"> Project 2</a></div>
+                <div class="project"><a href="#"> Project 3</a></div>
+                <div class="project"><a href="#">Project 4</a></div>
             </div>
         </main>
     </main>
 
     <div class="footer">
         <h2 style="text-align: center; color: white;">Contact Me</h2>
-        <form>
-            <input type="text" name="fullname" placeholder="Enter Fullname">
+        <form name="contact" method="POST" data-netlify="true">
+            <input class="span2" type="text" name="fullname" placeholder="Enter Fullname">
             <input type="email" name="email" placeholder="Enter Email" >
             <textarea name="message"></textarea>
-            <button type="submit" >SUBMIT</button>
+            <button type="submit">SUBMIT</button>
         </form>
 
         <p style="color: white; margin-top: 10px">Design by JOHN ALPHONSUS</p>
